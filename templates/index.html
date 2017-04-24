@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Bus Explorer</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a href="mailto:wgm214@gmail.com">Contact</a>
+                    </li>
+                    <li role="presentation"><a href="http://www.github.com/wgmiller/bus_explorer">Reference</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Bus Explorer</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>Where to?</h1>
+            <p class="lead"></p>
+            <form action = "http://localhost:5000/result" method = "POST">
+                <p>City A <input type = "text" name = "origin1" /></p>
+                <p>City B <input type = "text" name = "origin2" /></p>
+                <p>Depart <input type="text" name="depart" data-provide="datepicker" data-date-start-date="+1d" data-date-orientation="top" data-date-autoclose="true"></p>
+                <p><input type = "submit" value = "submit" /></p>
+                
+            </form>
+        </div>
+
+
+ 
+        <div class="row marketing">
+            <div class="col-lg-6">
+                <h4>Save Money</h4>
+                <p>Skip the tourist spots. Save money by finding the cheapest places to get to.
+                </p>
+            </div>
+ 
+            <div class="col-lg-6">
+                <h4>Be Flexible</h4>
+                <p>Cheap tickets are always available. Book trips at the last second without penalty.</p>
+            </div>
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy; WGM 2017</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
